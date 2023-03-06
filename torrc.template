@@ -1,0 +1,4 @@
+# pinserver Hidden Service
+HiddenServiceDir /data/app-$APP_ID
+HiddenServicePort $APP_PINSERVER_PORT elements_node_1:$APP_PINSERVER_PORT
+HiddenServicePort $APP_PINSERVER_WEB_PORT elements_node_1:$APP_PINSERVER_WEB_PORT
