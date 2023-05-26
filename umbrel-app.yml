@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: pinserver
 icon: https://svgshare.com/i/ta0.svg
 category: Wallet Servers
-name: Pinserver
+name: Blind Oracle
 version: "0.0.2"
-tagline: Jade Pinserver
+tagline: Jade Blind Oracle
 description: >-
-        Pinserver is the oracle server that helps enforce 3 PIN tentatives on Jade.
+        Oracle server that helps enforce 3 PIN tentatives on Jade.
 releasesNotes: >-
         First version
 developer: Blockstream
