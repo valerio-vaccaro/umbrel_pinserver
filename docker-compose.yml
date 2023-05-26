@@ -4,10 +4,10 @@ services:
   app_proxy:
    environment:
      APP_HOST: pinserver_web_1
-     APP_PORT: 8081
+     APP_PORT: $APP_PINSERVER_WEB_PORT
 
   node:
-    image: tulipan81/blind_pin_server:v0.0.1@sha256:1d87942f43cf182bf94f4789e9177a9644588fd20cf134d52377f4e1042d3932
+    image: tulipan81/blind_pin_server:v0.0.2@sha256:c3d32ac20594af9303de1971d014f39929a76efd4aa9717bedb77814117e1f98
     depends_on:
       - tor
       - web
@@ -21,7 +21,7 @@ services:
       - ${APP_DATA_DIR}/data/pins:/pins
 
   web: 
-    image: tulipan81/pinserver_web:v0.0.1@sha256:06795d95728ef1183e81ea11c6f3b0d4708f1d1dd40162ba6fd8c25ee6fb2941
+    image: tulipan81/pinserver_web:v0.0.3@sha256:338a581ce74938cd15e50b3beff456b8d261d6342584c07240c7bfc042751368  
     depends_on: 
       - tor
     restart: on-failure
