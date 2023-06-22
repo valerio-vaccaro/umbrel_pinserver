@@ -1,7 +1,7 @@
 manifestVersion: 1.1
 id: pinserver
 icon: https://svgshare.com/i/ta0.svg
-category: Wallet Servers
+category: bitcoin
 name: Blind Oracle
 version: "0.0.2"
 tagline: Encrypt your wallet on Blockstream Jade
