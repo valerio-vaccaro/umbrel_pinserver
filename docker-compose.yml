@@ -32,10 +32,11 @@ services:
       - ${APP_DATA_DIR}/data/server_private_key.key:/app/server_private_key.key
       - ${APP_DATA_DIR}/data/pins:/app/pins
     environment:
-      PINSERVER_URL: ${APP_PINSERVER_HIDDEN_SERVICE}
+      PINSERVER_URL: ${APP_TAILSCALE_URL}
       PINSERVER_PORT: ${APP_PINSERVER_PORT}
-      PINSERVER_URL_B: ${APP_TAILSCALE_URL}
+      PINSERVER_URL_B: ${APP_PINSERVER_HIDDEN_SERVICE}
       PINSERVER_PORT_B: ${APP_PINSERVER_PORT}
+
   
   tor:
     image: getumbrel/tor:0.4.7.8@sha256:2ace83f22501f58857fa9b403009f595137fa2e7986c4fda79d82a8119072b6a
