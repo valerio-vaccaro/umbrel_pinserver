@@ -26,7 +26,7 @@ services:
       - tor
     restart: on-failure
     ports:
-      - $APP_PINSERVER_WEB_PORT:$APP_PINSERVER_WEB_PORT
+      - $APP_PINSERVER_WEB_PORT:8081
     volumes:
       - ${APP_DATA_DIR}/data/server_public_key.pub:/app/server_public_key.pub
       - ${APP_DATA_DIR}/data/server_private_key.key:/app/server_private_key.key

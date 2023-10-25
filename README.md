@@ -16,7 +16,7 @@ docker buildx build --platform "linux/arm64,linux/amd64" --tag "tulipan81/blind_
 ```
 
 ## Umbrel pinserver web interface
-Umbrel pinserver web interface is available at https://gl.blockstream.io/valerio-vaccaro/umbrel_pinserver_web and contains a flask app running on port 8081.
+Umbrel pinserver web interface is available at https://gl.blockstream.io/valerio-vaccaro/umbrel_pinserver_web and contains a flask app running on port 8095.
 
 ```
 git clone git@gl.blockstream.io:valerio-vaccaro/umbrel_pinserver_web.git
