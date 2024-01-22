@@ -3,7 +3,7 @@ id: pinserver
 icon: https://svgshare.com/i/ta0.svg
 category: bitcoin
 name: Blind Oracle
-version: "0.0.2"
+version: "0.0.1"
 tagline: Encrypt your wallet on Blockstream Jade
 description: >-
         Run a personal blind oracle to encrypt the wallet material on your 
@@ -26,8 +26,7 @@ repo: https://github.com/Blockstream/blind_pin_server
 support: https://t.me/blockstream_jade
 port: 3344
 gallery:
-  - https://i.imgur.com/u5H5E1w.jpeg
+  - https://i.imgur.com/iKlNNvD.jpeg
 path: ''
 deterministicPassword: false
-torOnly: true
 submitter: Valerio Vaccaro
